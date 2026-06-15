@@ -11,11 +11,7 @@ fn main() {
 
     // 1. Compile CUDA -> object file
     let status = Command::new("nvcc")
-        .args([
-            "-c",
-            cu_file,
-            "-o",
-        ])
+        .args(["-c", cu_file, "-o"])
         .arg(&obj_file)
         .status()
         .expect("Failed to run nvcc");
