@@ -1,0 +1,8 @@
+[workspace]
+members = ["engine", "transition"]
+
+resolver="2"
+
+[workspace.dependencies]
+transition = {path="transition"}
+rand="0.10.1"

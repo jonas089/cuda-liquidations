@@ -1,0 +1,5 @@
+cargo:rustc-link-search=native=/home/chef/Desktop/cuda/target/debug/build/engine-f27d7972fe487d61/out
+cargo:rustc-link-lib=static=kernel
+cargo:rustc-link-lib=dylib=cudart
+cargo:rustc-link-search=native=/usr/local/cuda/lib64
+cargo:rerun-if-changed=cuda/kernel.cu
